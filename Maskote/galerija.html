@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Include Bootstrap using CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Include jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Include CSS-->
+    <link href="galerija_style.css" rel="stylesheet" type="text/css" >
+    <link href="navbar_style.css" rel="stylesheet" type="text/css" >
+    <!--Include JavaScript for loading gif-->
+    <script src="loading.js"></script>
+    <script src="navbar_script.js"></script>
+    <script src="navbar_scroll_script.js"></script>
+    
+    <title>Galerija</title>
+</head>
+<body>
+    <div id="loader">
+        <img src="Slike/loading.gif" alt="Loading..." />
+    </div>
+    <header>
+        <div id="top_header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!--Levi deo headera-->
+                    <div class="col-md-6 div-medium-large" id="letf_side_of_header">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <i class="fas fa-phone-alt"></i><a href="tel:062555333">    062-555-333</a><!--PROMENITI NA PRAVI BROJ TELEFONA-->
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-envelope"></i><a href="mailto:maskote@gmail.com">    maskote@gmail.com</a><!--STAVITI PRAVI MAIL-->
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/maps?q=Your+City">    Ustanicka 77</a><!--STAVITI PRAVU ADRESU-->
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Desni deo headera-->
+                    <div class="col-md-6 text-end col-sm-12" id="right_side_of_header">
+                        <ul class="list-inline justify-content-end" id="social-icons">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><!--STAVITI PRAVI FACEBOOK-->
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><!--STAVITI PRAVI INSTAGRAM-->
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a><!--STAVITI PRAVI YOUTUBE-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="Slike/logo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">    
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="o_nama.html">O nama</a></li>
+                        <li class="nav-item"><a class="nav-link" href="maskote.html">Maskote</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dogadjaji.html">Događaji</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="content contact-title">
+                    <h1>Galerija<h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row text-center">
+                <h1>Pogledajte slike iz naše galerije</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                   <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+                </div>
+                <div class="col-md-3 col-sm-12">
+                   <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+                </div>
+                <div class="col-md-3 col-sm-12">
+                   <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                   <img src="Slike/krstenje.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Toy car on the road." />
+                </div>
+                <div class="col-md-3 col-sm-12">
+                   <img src="Slike/popularna maskota 1.jpg" onclick="openLightbox();toSlide(5)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+                </div>
+                <div class="col-md-3 col-sm-12">
+                   <img src="Slike/popularna maskota 2.jpg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" alt="Toy car in the city." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                   <img src="Slike/popularna maskota 3.jpg" onclick="openLightbox();toSlide(7)" class="hover-shadow preview" alt="Toy car on the road." />
+                </div>
+                <div class="col-md-3 col-sm-12">
+                   <img src="Slike/rodjendan.jpg" onclick="openLightbox();toSlide(8)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+                </div>
+                <div class="col-md-3 col-sm-12">
+                   <img src="Slike/rodjendan2.jpg" onclick="openLightbox();toSlide(9)" class="hover-shadow preview" alt="Toy car in the city." />
+                </div>
+            </div>
+
+              <!-- This is your lightbox, it is contained in a modal. Here you provide all the images,
+                   controls, and another set of preview images as the dots. Dots show your user which
+                   image is currently active. Note that you use entities (e.g. &times;), more info on
+                   them at the bottom. -->
+                   
+              <div id="Lightbox" class="modal">
+                <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                <div class="modal-content">
+                  <div class="slide">
+                      <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+                  </div>
+                  <div class="slide">
+                      <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
+                  </div>    
+                  <div class="slide">
+                      <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                  <div class="slide">
+                    <img src="Slike/krstenje.jpg" class="image-slide" alt="Toy car on the road." />
+                  </div>
+                  <div class="slide">
+                    <img src="Slike/popularna maskota 1.jpg" class="image-slide" alt="Toy car exploring offroad." />
+                  </div>    
+                  <div class="slide">
+                    <img src="Slike/popularna maskota 2.jpg" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                  <div class="slide">
+                    <img src="Slike/popularna maskota 3.jpg" class="image-slide" alt="Toy car on the road." />
+                  </div>
+                  <div class="slide">
+                    <img src="Slike/rodjendan.jpg" class="image-slide" alt="Toy car exploring offroad." />
+                  </div>    
+                  <div class="slide">
+                    <img src="Slike/rodjendan2.jpg" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                
+                  <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+              </div>
+              <div id="LightboxPhone" class="modalPhone">
+                <div class="modal-content">
+                  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                  <div class="slidePhone">
+                      <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+                  </div>
+                  <div class="slidePhone">
+                      <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
+                  </div>    
+                  <div class="slidePhone">
+                      <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                  <div class="slidePhone">
+                    <img src="Slike/krstenje.jpg" class="image-slide" alt="Toy car on the road." />
+                  </div>
+                  <div class="slidePhone">
+                    <img src="Slike/popularna maskota 1.jpg" class="image-slide" alt="Toy car exploring offroad." />
+                  </div>    
+                  <div class="slidePhone">
+                    <img src="Slike/popularna maskota 2.jpg" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                  <div class="slidePhone">
+                    <img src="Slike/popularna maskota 3.jpg" class="image-slide" alt="Toy car on the road." />
+                  </div>
+                  <div class="slidePhone">
+                    <img src="Slike/rodjendan.jpg" class="image-slide" alt="Toy car exploring offroad." />
+                  </div>    
+                  <div class="slidePhone">
+                    <img src="Slike/rodjendan2.jpg" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                
+                  <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container div-medium-large">
+            <div class="row">
+                <div class="col-md-3 site_logo">
+                    <a href="index.html">
+                        <img src="Slike/logo.png" alt="logo">
+                    </a>
+                    <p>Ekipa Maskote će Vam prižuti nezaboravnu zabavu u kojoj ćete uživati.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <b>Linkovi</b>
+                            </li>
+                            <li>
+                                <a href="index.html">Početna</a>
+                            </li>
+                            <li>
+                                <a href="o_nama.html">O nama</a>
+                            </li>
+                            <li>
+                                <a href="maskote.html">Maskote</a>
+                            </li>
+                            <li>
+                                <a href="galerija.html">Galerija</a>
+                            </li>
+                            <li>
+                                <a href="dogadjaji.html">Događaji</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 follow-us">
+                    <b>Zapratite nas</b>
+                    <ul class="list-inline justify-content-end" id="social-icons">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><!--STAVITI PRAVI FACEBOOK-->
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><!--STAVITI PRAVI INSTAGRAM-->
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a><!--STAVITI PRAVI YOUTUBE-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <b>Kontakt</b>
+                    <p>Pozovite i zakažite svoju maskotu da ulepšate Vaš specijalan dan.</p>
+                    <a href="kontakt.html"><button>KONTAKT</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <div class="col-md-6"><p>Copyright &copy; 2023 Maskote. All rights reserved.</p></div>
+                <div class="col-md-6 text-end"><p>Dizajn: Aleksa i Bora</p></div>
+            </div>
+        </div>
+        <div class="container div-phone">
+            <div class="row">
+                <div class="col-6 site_logo">
+                    <a href="index.html">
+                        <img src="Slike/logo.png" alt="logo">
+                    </a>
+                    <p>Ekipa Maskote će Vam prižuti nezaboravnu zabavu u kojoj ćete uživati.</p>
+                </div>
+                <div class="col-6">
+                    <b>Kontakt</b>
+                    <p>Pozovite i zakažite svoju maskotu da ulepšate Vaš specijalan dan.</p>
+                    <a href="kontakt.html"><button>KONTAKT</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <b>Linkovi</b>
+                            </li>
+                            <li>
+                                <a href="index.html">Početna</a>
+                            </li>
+                            <li>
+                                <a href="o_nama.html">O nama</a>
+                            </li>
+                            <li>
+                                <a href="maskote.html">Maskote</a>
+                            </li>
+                            <li>
+                                <a href="galerija.html">Galerija</a>
+                            </li>
+                            <li>
+                                <a href="dogadjaji.html">Događaji</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 follow-us">
+                    <b>Zapratite nas</b>
+                    <ul class="list-inline justify-content-end" id="social-icons">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><!--STAVITI PRAVI FACEBOOK-->
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><!--STAVITI PRAVI INSTAGRAM-->
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a><!--STAVITI PRAVI YOUTUBE-->
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row bottom">
+                <hr>
+                <div class="col-6">
+                    Copyright &copy; 2023 Maskote. All rights reserved.
+                </div>
+                <div class="col-6 text-end">
+                    Dizajn: Aleksa i Bora
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="tel:+38162555333" class="pozvati">
+        <img src="Slike/call.png" alt="" class="pozvati_ikonica">
+    </a>
+    <script src="galerija_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+#loader img {
+    width: 50px; /* Adjust the size of the loading GIF as needed */
+}
+
+#top_header {
+    background-color: #68422b;
+    width: 100%;
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    padding: 12px 0;
+    overflow: hidden;*/
+}
+
+#top_header #social-icons {
+    float: right;
+    color: white;
+}
+
+#top_header #letf_side_of_header ul{
+    margin-top: 10px;
+}
+
+#top_header #right_side_of_header ul{
+    margin-top: 10px;
+}
+
+#top_header #letf_side_of_header ul li i {
+    color: #d7a280;
+}
+
+#top_header ul li a {
+    color: white;
+    text-decoration: none;
+}
+#top_header ul li a:hover {
+    color: #d7a280;
+}
+
+#middle_header {
+    background-color: #68422b;
+    overflow: hidden;
+    margin-top: 1px;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.site_logo img {
+    height: 20vh;
+}
+
+#middle_header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#middle_header ul li a:hover {
+    color: #d7a280;
+}
+
+
+.navigation {
+    height: auto;
+}
+
+.banana {
+    background-color: yellow;
+    width: 100%;
+}
+
+.links{
+    font-size: x-large;
+}
+
+#middle_header ul li {
+    padding: 15px;
+}
+
+#middle_header ul {
+    padding-top: 6%;
+}
+
+button {
+    background-color: #d7a280;
+    color: white;
+    font-size: large;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.call-button{
+    padding-top: 5%;
+}
+
+.banner {
+    background-image: url("Slike/za\ banner\ gotovo.png");
+    background-size: fill;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    color: white;
+    padding-top: 30px;
+}
+
+.banner>.container {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 30vh; /* You may need to adjust this to suit your layout */
+}
+
+
+.mascots {
+    background-color: #e2cabc;
+    color: #9a5731;
+    font-weight: 450;
+}
+
+
+.mascots img {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.mascots .div-medium-large .row{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mascots .div-medium-large h1{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.mascots .div-medium-large{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+.footer {
+    background-image: url("Slike/za\ footer.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    font-weight: 200;
+    padding-top: 30px;
+    
+}
+
+.site-logo-footer img {
+    height: 10vh;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #d7a280;
+}
+
+.follow-us {
+    font-size: x-large;
+}
+
+.footer b {
+    font-size: x-large;
+}
+
+/*********DEO ZA RESPONZIVNOST NA FONU********/
+@media screen and (min-width: 768px) {
+    /* This style will apply to screens with a minimum width of 768px (medium and large screens) */
+    .div-medium-large {
+      display: block; /* Show this div */
+    }
+    .div-phone {
+      display: none; /* Hide this div */
+    }
+}
+  
+  /* Styles for phones */
+@media screen and (max-width: 767px) {
+    /* This style will apply to screens with a maximum width of 767px (phones) */
+    .div-medium-large {
+      display: none; /* Hide this div */
+    }
+    .div-phone {
+      display: block; /* Show this div */
+    }
+}
+
+.div-phone .col-6 {
+    margin-top: 20px;
+}
+
+.mascots .div-phone{
+    padding-bottom: 20px;
+}
+
+.mascots .div-phone {
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

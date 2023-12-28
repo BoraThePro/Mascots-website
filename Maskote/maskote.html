@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Include Bootstrap using CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Include jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Include CSS-->
+    <link href="maskote_style.css" rel="stylesheet" type="text/css" >
+    <link href="navbar_style.css" rel="stylesheet" type="text/css" >
+    <!--Include JavaScript for loading gif-->
+    <script src="loading.js"></script>
+    <script src="navbar_script.js"></script>
+    <script src="navbar_scroll_script.js"></script>
+    <title>Maskote</title>
+</head>
+<body>
+    <div id="loader">
+        <img src="Slike/loading.gif" alt="Loading..." />
+    </div>
+    <header>
+      <div id="top_header">
+          <div class="container">
+              <div class="row align-items-center">
+                  <!--Levi deo headera-->
+                  <div class="col-md-6 div-medium-large" id="letf_side_of_header">
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <i class="fas fa-phone-alt"></i><a href="tel:062555333">    062-555-333</a><!--PROMENITI NA PRAVI BROJ TELEFONA-->
+                          </li>
+                          <li class="list-inline-item">
+                              <i class="fas fa-envelope"></i><a href="mailto:maskote@gmail.com">    maskote@gmail.com</a><!--STAVITI PRAVI MAIL-->
+                          </li>
+                          <li class="list-inline-item">
+                              <i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/maps?q=Your+City">    Ustanicka 77</a><!--STAVITI PRAVU ADRESU-->
+                          </li>
+                      </ul>
+                  </div>
+                  <!--Desni deo headera-->
+                  <div class="col-md-6 text-end col-sm-12" id="right_side_of_header">
+                      <ul class="list-inline justify-content-end" id="social-icons">
+                          <li class="list-inline-item">
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><!--STAVITI PRAVI FACEBOOK-->
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><!--STAVITI PRAVI INSTAGRAM-->
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a><!--STAVITI PRAVI YOUTUBE-->
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand" href="#page-top"><img src="Slike/logo.png" alt="..." /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">    
+                  Menu
+                  <i class="fas fa-bars ms-1"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                      <li class="nav-item"><a class="nav-link" href="o_nama.html">O nama</a></li>
+                      <li class="nav-item"><a class="nav-link" href="maskote.html">Maskote</a></li>
+                      <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+                      <li class="nav-item"><a class="nav-link" href="dogadjaji.html">Događaji</a></li>
+                      <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+    <section class="banner">
+        <div class="container">
+            <div class="content contact-title">
+                    <h1>Maskote<h1>
+            </div>
+        </div>
+    </section>
+    <section class="mascots">
+        <div class="container div-medium-large">
+            <div class="row text-center">
+              <h1>Izaberite maskote koje će ulepšati Vaš dan</h1>
+            </div>
+            <div class="row"><!--Prvi red od 4 maskote-->
+                <div class="col-md-3">
+                    <div id="Mascot-1" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-2" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-3" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-4" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row"><!--Drugi red od 4 maskote-->
+                <div class="col-md-3">
+                    <div id="Mascot-5" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-5" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-5" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-6" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-6" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-6" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-7" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-7" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-7" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-8" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-8" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-8" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row"><!--Treci red od 4 maskote-->
+                <div class="col-md-3">
+                    <div id="Mascot-9" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-9" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-9" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-9" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-10" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-10" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-10" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-10" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-10" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-11" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-11" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-11" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-11" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-11" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-11" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-12" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-12" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-12" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-12" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-12" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-12" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row"><!--Cetvrti red od 4 maskote-->
+                <div class="col-md-3">
+                    <div id="Mascot-13" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-13" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-13" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-13" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-13" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-13" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-14" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-14" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-14" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-14" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-14" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-14" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-15" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-15" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-15" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-15" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-15" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-15" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-16" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-16" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-16" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-16" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-16" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-16" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row"><!--Peti red od 4 maskote-->
+                <div class="col-md-3">
+                    <div id="Mascot-17" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-17" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-17" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-17" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-17" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-17" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-18" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-18" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-18" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-18" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-18" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-18" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-19" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-19" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-19" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-19" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-19" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-19" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="Mascot-20" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-20" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-20" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-20" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-20" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-20" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row"><!--Sesti red 1 maskota-->
+                <div class="col-md-3">
+                    <div id="Mascot-21" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mascot-21" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mascot-21" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mascot-21" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-21" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mascot-21" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container div-phone">
+          <div class="row text-center">
+            <h1>Izaberite maskote koje će ulepšati Vaš dan</h1>
+          </div>
+          <div class="row"><!--Prvi red od 4 maskote-->
+              <div class="col-6">
+                  <div id="Mascot-1" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-2" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-3" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-4" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>
+          <div class="row"><!--Drugi red od 4 maskote-->
+              <div class="col-6">
+                  <div id="Mascot-5" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-6" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-7" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-7" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-7" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-8" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-8" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-8" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>
+          <div class="row"><!--Treci red od 4 maskote-->
+              <div class="col-6">
+                  <div id="Mascot-9" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-9" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-9" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-9" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-10" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-10" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-10" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-10" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-10" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-11" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-11" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-11" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-11" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-11" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-11" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-12" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-12" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-12" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-12" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-12" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-12" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>
+          <div class="row"><!--Cetvrti red od 4 maskote-->
+              <div class="col-6">
+                  <div id="Mascot-13" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-13" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-13" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-13" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-13" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-13" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-14" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-14" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-14" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-14" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-14" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-14" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-15" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-15" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-15" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-15" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-15" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-15" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-16" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-16" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-16" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-16" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-16" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-16" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>
+          <div class="row"><!--Peti red od 4 maskote-->
+              <div class="col-6">
+                  <div id="Mascot-17" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-17" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-17" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-17" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-17" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-17" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-18" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-18" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-18" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-18" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-18" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-18" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-19" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-19" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-19" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-19" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-19" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-19" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+              <div class="col-6">
+                  <div id="Mascot-20" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-20" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-20" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-20" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-20" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-20" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>
+          <div class="row"><!--Sesti red 1 maskota-->
+              <div class="col-6">
+                  <div id="Mascot-21" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Mascot-21" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Mascot-21" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Mascot-21" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Slike/popularna maskota 1.jpg" class="d-block w-100" alt="maskota-1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 2.jpg" class="d-block w-100" alt="maskota-2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Slike/popularna maskota 3.jpg" class="d-block w-100" alt="maskota-3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#Mascot-21" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#Mascot-21" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container div-medium-large">
+          <div class="row">
+              <div class="col-md-3 site_logo">
+                  <a href="index.html">
+                      <img src="Slike/logo.png" alt="logo">
+                  </a>
+                  <p>Ekipa Maskote će Vam prižuti nezaboravnu zabavu u kojoj ćete uživati.</p>
+              </div>
+              <div class="col-md-3">
+                  <div class="text-center">
+                      <ul class="list-inline">
+                          <li>
+                              <b>Linkovi</b>
+                          </li>
+                          <li>
+                              <a href="index.html">Početna</a>
+                          </li>
+                          <li>
+                              <a href="o_nama.html">O nama</a>
+                          </li>
+                          <li>
+                              <a href="maskote.html">Maskote</a>
+                          </li>
+                          <li>
+                              <a href="galerija.html">Galerija</a>
+                          </li>
+                          <li>
+                              <a href="dogadjaji.html">Događaji</a>
+                          </li>
+                          <li>
+                              <a href="kontakt.html">Kontakt</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-3 follow-us">
+                  <b>Zapratite nas</b>
+                  <ul class="list-inline justify-content-end" id="social-icons">
+                      <li class="list-inline-item">
+                          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><!--STAVITI PRAVI FACEBOOK-->
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><!--STAVITI PRAVI INSTAGRAM-->
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a><!--STAVITI PRAVI YOUTUBE-->
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <b>Kontakt</b>
+                  <p>Pozovite i zakažite svoju maskotu da ulepšate Vaš specijalan dan.</p>
+                  <a href="kontakt.html"><button>KONTAKT</button></a>
+              </div>
+          </div>
+          <div class="row">
+              <hr>
+              <div class="col-md-6"><p>Copyright &copy; 2023 Maskote. All rights reserved.</p></div>
+              <div class="col-md-6 text-end"><p>Dizajn: Aleksa i Bora</p></div>
+          </div>
+      </div>
+      <div class="container div-phone">
+          <div class="row">
+              <div class="col-6 site_logo">
+                  <a href="index.html">
+                      <img src="Slike/logo.png" alt="logo">
+                  </a>
+                  <p>Ekipa Maskote će Vam prižuti nezaboravnu zabavu u kojoj ćete uživati.</p>
+              </div>
+              <div class="col-6">
+                  <b>Kontakt</b>
+                  <p>Pozovite i zakažite svoju maskotu da ulepšate Vaš specijalan dan.</p>
+                  <a href="kontakt.html"><button>KONTAKT</button></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <div class="text-center">
+                      <ul class="list-inline">
+                          <li>
+                              <b>Linkovi</b>
+                          </li>
+                          <li>
+                              <a href="index.html">Početna</a>
+                          </li>
+                          <li>
+                              <a href="o_nama.html">O nama</a>
+                          </li>
+                          <li>
+                              <a href="maskote.html">Maskote</a>
+                          </li>
+                          <li>
+                              <a href="galerija.html">Galerija</a>
+                          </li>
+                          <li>
+                              <a href="dogadjaji.html">Događaji</a>
+                          </li>
+                          <li>
+                              <a href="kontakt.html">Kontakt</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-6 follow-us">
+                  <b>Zapratite nas</b>
+                  <ul class="list-inline justify-content-end" id="social-icons">
+                      <li class="list-inline-item">
+                          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><!--STAVITI PRAVI FACEBOOK-->
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><!--STAVITI PRAVI INSTAGRAM-->
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a><!--STAVITI PRAVI YOUTUBE-->
+                      </li>
+                  </ul>
+              </div>
+              
+          </div>
+          <div class="row bottom">
+            <hr>
+            <div class="col-6">
+                Copyright &copy; 2023 Maskote. All rights reserved.
+            </div>
+            <div class="col-6 text-end">
+                Dizajn: Aleksa i Bora
+            </div>
+        </div>
+      </div>
+  </footer>
+  <a href="tel:+38162555333" class="pozvati">
+    <img src="Slike/call.png" alt="" class="pozvati_ikonica">
+  </a>
+</body>
+</html>

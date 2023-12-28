@@ -1,0 +1,407 @@
+/*
+*{
+    outline: 2px solid red;
+    margin: 0;
+    padding: 0;
+}*/ 
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+#loader img {
+    width: 50px; /* Adjust the size of the loading GIF as needed */
+}
+
+#top_header {
+    background-color: #68422b;
+    width: 100%;
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    padding: 12px 0;
+    overflow: hidden;*/
+}
+
+#top_header #social-icons {
+    float: right;
+    color: white;
+}
+
+#top_header #letf_side_of_header ul{
+    margin-top: 10px;
+}
+
+#top_header #right_side_of_header ul{
+    margin-top: 10px;
+}
+
+#top_header #letf_side_of_header ul li i {
+    color: #d7a280;
+}
+
+#top_header ul li a {
+    color: white;
+    text-decoration: none;
+}
+#top_header ul li a:hover {
+    color: #d7a280;
+}
+
+#middle_header {
+    background-color: #68422b;
+    overflow: hidden;
+    margin-top: 1px;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.site_logo img {
+    height: 20vh;
+}
+
+#middle_header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#middle_header ul li a:hover {
+    color: #d7a280;
+}
+
+
+.navigation {
+    height: auto;
+}
+
+.banana {
+    background-color: yellow;
+    width: 100%;
+}
+
+.links{
+    font-size: x-large;
+}
+
+#middle_header ul li {
+    padding: 15px;
+}
+
+#middle_header ul {
+    padding-top: 6%;
+}
+
+button {
+    background-color: #d7a280;
+    color: white;
+    font-size: large;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.call-button{
+    padding-top: 5%;
+}
+
+.banner {
+    background-color: #9a5731;
+}
+
+.banner img{
+    height: 50vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner-left-side {
+    padding-top: 100px;
+    color: white;
+
+}
+
+.banner-left-side h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.banner-left-side button {
+    font-weight: bold;
+}
+
+.about-us {
+    background-color: #e2cabc;
+    color: #9a5731;
+    font-weight: 450;
+}
+
+.about-us .div-medium-large {
+  padding-top: 70px;
+}
+
+.div-medium-large .about-us-left {
+    margin-top: 70px;
+    padding-right: 50px;
+}
+
+.about-us-left p {
+    margin-top: 20px;
+    
+}
+
+.about-us-right p {
+    margin-bottom: 20px;
+    
+}
+
+.div-medium-large .about-us-right {
+    margin-top: 70px;
+    padding-left: 50px;
+}
+
+.about-us img {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 70%;
+}
+
+.about-us-right img {
+    width: 100%;
+}
+
+.popular-mascots {
+    margin-top: 140px;
+    padding-bottom: 70px; 
+}
+
+.popular-mascots img {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.text-za-popularne-maskote {
+    display: grid;
+    place-items: center;
+}
+
+.events {
+  background-color: #e2cabc;
+  color: #9a5731;
+  font-weight: 450;
+}
+
+.card {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  height: 100%;
+  width: 90%;
+  color: #9a5731;
+
+}
+
+.card>img{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire card */
+  height: 100%;
+}
+
+.event-text {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.event-button {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer {
+    background-image: url("Slike/za\ footer.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    font-weight: 200;
+    padding-top: 30px;
+    
+}
+
+.site-logo-footer img {
+    height: 10vh;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #d7a280;
+}
+
+.follow-us {
+    font-size: x-large;
+}
+
+.footer b {
+    font-size: x-large;
+}
+
+/*************************DEO ZA NAVBAR*****************************/
+
+
+/*********DEO ZA RESPONZIVNOST NA FONU********/
+@media screen and (min-width: 768px) {
+  /* This style will apply to screens with a minimum width of 768px (medium and large screens) */
+  .div-medium-large {
+    display: block; /* Show this div */
+  }
+  .div-phone {
+    display: none; /* Hide this div */
+  }
+}
+
+/* Styles for phones */
+@media screen and (max-width: 767px) {
+  /* This style will apply to screens with a maximum width of 767px (phones) */
+  .div-medium-large {
+    display: none; /* Hide this div */
+  }
+  .div-phone {
+    display: block; /* Show this div */
+  }
+}
+
+.banner .div-phone img{
+  height: 20vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+  .div-phone button {
+        background-color: #d7a280;
+        color: white;
+        font-size: medium;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+  }
+
+.div-phone .banner-left-side {
+  padding-top: 20px;
+  color: white;
+
+}
+
+.div-phone .about-us-left {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.div-phone .about-us-right {
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.div-phone .popular-mascots {
+  margin-top: 100px;
+  padding-bottom: 40px;
+  margin-bottom: -1px; 
+}
+
+.div-phone .popular-mascots img {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.div-phone .popular-mascots .row {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.events .div-phone{
+  background-color: #e2cabc;
+  color: #9a5731;
+  font-weight: 450;
+  padding-top: 0px;
+}
+
+.div-phone .event-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+.div-phone .card {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  height: 100%;
+  width: fit-content;
+  color: #9a5731;
+  margin-right: 0 !important; 
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.div-phone .card>img{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire card */
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.div-phone .event-button {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.cards .row{
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
